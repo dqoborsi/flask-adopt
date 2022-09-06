@@ -11,6 +11,7 @@ app.config['SECRET_KEY'] = 'abcdef'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///adopt'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 
 connect_db(app)
 db.create_all()
